@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "jest",
-        "web-server": "browser-sync -s -w --no-ui"
+        "web-server": "./node_modules/.bin/parcel index.html"
     },
     "repository": {
         "type": "git",
