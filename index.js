@@ -1,5 +1,5 @@
 "use strict";
 
-import { sum } from './sum.js'
+const sum = require('./sum')
 
-console.log(sum(1, 3))
+console.log(sum(1, 2))
