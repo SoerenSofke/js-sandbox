@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "jest",
-        "webserver": "./node_modules/.bin/browser-sync -s -w"
+        "web server": "./node_modules/.bin/browser-sync -s -w --no-ui"
     },
     "repository": {
         "type": "git",
