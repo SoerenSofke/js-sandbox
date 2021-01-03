@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/SoerenSofke/js-sandbox#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.13",
     "jest": "^26.6.3"
   }
 }
