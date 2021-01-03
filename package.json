@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "jest",
-        "web server": "./node_modules/.bin/browser-sync -s -w --no-ui"
+        "web-server": "browser-sync -s -w --no-ui"
     },
     "repository": {
         "type": "git",
@@ -20,6 +20,7 @@
     "homepage": "https://github.com/SoerenSofke/js-sandbox#readme",
     "devDependencies": {
         "browser-sync": "^2.26.13",
+        "esm": "^3.2.25",
         "jest": "^26.6.3"
     }
 }
