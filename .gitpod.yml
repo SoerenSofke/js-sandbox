@@ -1,16 +1,13 @@
 tasks:
-  - name: Install dependencies
-    init: yarn install
-    command: gp sync-done ready
-
   - name: Bundle and serve
+    init: yarn install
     command: >-
-        gp sync-await ready &&
-        ./node_modules/.bin/parcel watch index.html & 
-        ./node_modules/.bin/browser-sync start -s 'dist' -w --no-ui --no-open &
-  
+      ./node_modules/.bin/parcel watch index.html & 
+      ./node_modules/.bin/browser-sync start -s 'dist' -w --no-ui --no-open &
+      gp sync-done install
+
   - name: Test
-    command: gp sync-await ready && ./node_modules/.bin/jest --watch
+    command: gp sync-await install && ./node_modules/.bin/jest --watch
 
 ports:
   - port: 3000
