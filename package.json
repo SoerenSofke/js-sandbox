@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "Test": "gp sync-await install; ./node_modules/.bin/jest --watch",
-        "Bundle-and-serve": "gp sync-await install; ./node_modules/.bin/parcel watch index.html --no-hmr & ./node_modules/.bin/browser-sync start -s 'dist' -w --no-ui --no-open"
+        "Bundle": "gp sync-await install; ./node_modules/.bin/microbundle --watch --no-compress --entry module.js --output ./module.js --format es --raw",
+        "Serve": "gp sync-await install; ./node_modules/.bin/browser-sync start -s -w --no-ui --no-open"
     },
     "repository": {
         "type": "git",
@@ -20,7 +21,7 @@
     "homepage": "https://github.com/SoerenSofke/js-sandbox#readme",
     "devDependencies": {
         "jest": "^26.6.3",
-        "parcel-bundler": "^1.12.4",
-        "browser-sync": "^2.26.13"
+        "browser-sync": "^2.26.13",
+        "microbundle": "^0.13.0"
     }
 }
