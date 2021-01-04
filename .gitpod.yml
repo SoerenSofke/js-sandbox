@@ -1,7 +1,8 @@
 tasks:
   - init: yarn install
-  - command: ./node_modules/.bin/parcel watch index.html
-  - command: ./node_modules/.bin/browser-sync start -s 'dist' -w --no-ui --no-open
+    command: >-
+      ./node_modules/.bin/parcel watch index.html & 
+      ./node_modules/.bin/browser-sync start -s 'dist' -w --no-ui --no-open
 
 ports:
   - port: 3000
