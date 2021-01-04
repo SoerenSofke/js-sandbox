@@ -3,7 +3,7 @@ tasks:
     command: >-
       ./node_modules/.bin/parcel watch index.html & 
       ./node_modules/.bin/browser-sync start -s 'dist' -w --no-ui --no-open &
-      jest --watch
+      ./node_modules/.bin/jest --watch
 
 ports:
   - port: 3000
