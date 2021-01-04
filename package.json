@@ -4,9 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "jest --watch",
-        "bundle": "./node_modules/.bin/parcel watch index.html",
-        "web-server": "./node_modules/.bin/browser-sync start -s 'dist' -w --no-ui --no-open"
+        "Test": "gp sync-await install; ./node_modules/.bin/jest --watch",
+        "Bundle-and-serve": "gp sync-await install; ./node_modules/.bin/parcel watch index.html & ./node_modules/.bin/browser-sync start -s 'dist' -w --no-ui --no-open"
     },
     "repository": {
         "type": "git",

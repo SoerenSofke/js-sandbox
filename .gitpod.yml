@@ -1,13 +1,6 @@
 tasks:
-  - name: Bundle and serve
-    init: yarn install
-    command: >-
-      ./node_modules/.bin/parcel watch index.html & 
-      ./node_modules/.bin/browser-sync start -s 'dist' -w --no-ui --no-open &
-      gp sync-done install
-
-  - name: Test
-    command: gp sync-await install && ./node_modules/.bin/jest --watch
+  - init: yarn install
+    command: gp sync-done install
 
 ports:
   - port: 3000
