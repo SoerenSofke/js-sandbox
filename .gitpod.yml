@@ -1,3 +1,3 @@
 tasks:
   - init: yarn install
-    command: ./node_modules/.bin/parcel index.html
+    command: ./node_modules/.bin/parcel watch index.html
