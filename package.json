@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "jest",
+        "test": "jest --watch",
         "bundle": "./node_modules/.bin/parcel watch index.html",
         "web-server": "./node_modules/.bin/browser-sync start -s 'dist' -w --no-ui --no-open"
     },
