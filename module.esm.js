@@ -1,4 +1,6 @@
-var addOne = require('./submodule.js');
+var addOne = function addOne(a) {
+  return a + 1;
+};
 
 var sum = function sum(a, b) {
   return a + addOne(b);
