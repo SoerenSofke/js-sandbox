@@ -1,5 +1,4 @@
-import { addOne } from './submodule.js'
+import { addZero } from './submodule.js'
 
-const sum = (a, b) => a + b
+export const sum = (a, b) => a + addZero(b)
 
-try { module.exports = sum } catch { }

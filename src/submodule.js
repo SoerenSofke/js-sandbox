@@ -1,1 +1,1 @@
-export const addOne = (a) => a + 1
+export const addZero = (a) => a + 0

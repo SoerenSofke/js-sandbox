@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "Bundle": "gp sync-await install; ./node_modules/.bin/microbundle --watch --no-compress --entry src/module.js --output ./dist/module.js --format es --raw",
+        "Bundle": "gp sync-await install; ./node_modules/.bin/microbundle --watch --no-compress --entry src/index.js --output ./dist/index.js --format es --raw",
         "Test": "gp sync-await install; ./node_modules/.bin/jest --watch",
         "Serve": "gp sync-await install; ./node_modules/.bin/browser-sync start -s -w --no-ui --no-open"
     },
